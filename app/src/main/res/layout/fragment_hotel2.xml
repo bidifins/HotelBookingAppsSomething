@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:layout_width="380dp"
+                android:layout_height="400dp"
+                android:layout_marginTop="15dp"
+                android:scaleType="centerCrop"
+                app:shapeAppearanceOverlay="@style/RoundedSquare"
+                app:srcCompat="@drawable/lombok" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:text="The Oberoi Lombok"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="2 Beds - 2 Bath"
+                android:textColor="#A0A0A0" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginBottom="100dp"
+                android:text="Berada di Medana Bay—sekitar 30 km ke arah utara Kota Mataram—The Oberoi Lombok menjadi salah satu hotel termewah di Indonesia dengan pelayanan terbaik. Tentunya, pemandangan pantai yang bersih dan tak terlalu ramai menjadi salah satu daya tarik akomodasi mewah ini. Hotel mewah di Indonesia ini menghadirkan 20 unit vila dan 50 unit paviliun dengan ukuran mulai dari 70 m2. Masing-masing memiliki pemandangan berupa taman tropis atau laut. Tempatnya yang sangat nyaman dan tenang cocok bagi kamu yang ingin menghabiskan staycation mewah sembari memanjakan diri bersama orang tersayang di sini." />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <Button
+        android:id="@+id/back"
+        android:layout_width="55dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="25dp"
+        android:text=">"
+        android:textColor="@color/white"
+        android:backgroundTint="#6750A4"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="105dp"
+        android:layout_marginBottom="24dp"
+        android:text="Book Now"
+        android:textColor="@color/white"
+        android:backgroundTint="#6750A4"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
